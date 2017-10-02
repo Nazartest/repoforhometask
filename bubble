@@ -1,0 +1,23 @@
+var m = [1, 5, 7, 4, 11, 6, 7, 8, 9, 5];
+function bubble()
+{
+var count = m.length-1;
+for (var i = 0; i < count; i++)
+     for (var j = 0; j < count-i; j++)
+        if (m[j]> m[j+1]) {
+           var max = m[j];
+           m[j] = m[j+1];
+           m[j+1] = max;
+        }
+		document.write(m);
+}
+bubble();
+
+function check(){
+  for ( var c = 0; c<m.length-1; c++)
+         if (m[c]<=m[c+1])
+            { console.log('OK')}
+        else { console.log('Not ok');
+		} 
+}
+check();
