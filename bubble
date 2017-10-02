@@ -9,8 +9,7 @@ for (var i = 0; i < count; i++)
            m[j] = m[j+1];
            m[j+1] = max;
         }
-		document.write(m);
-}
+		}
 bubble();
 
 function check(){
